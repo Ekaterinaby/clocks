@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url(wall.jpg) no-repeat;
+    background-size: cover;
+    font-family: Arial;
+    text-align: center;
+    font-size: 24px;
+}
+
+body.on {
+    background: url(wall2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.timetable {
+    position: relative;
+    width: 100%;
+    display: block;
+    color: #fff;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #fc0404;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    border: white solid 5px;
+    top: 46%;
+    left: 46%;
+}
+
+body.on .dot {
+    border: #000 solid 5px;
+}
+
+.boards {
+    max-width: 450px;
+    min-height: 200px;
+    background: url(boards.png) no-repeat center bottom;
+    background-size: contain;
+    padding-top: 70px;
+    margin: 0 auto
+}
+
+.time {
+    padding-top: 60px
+}
+
+.clock {
+    width: 250px;
+    height: 250px;
+    border: 10px solid white;
+    border-radius: 50%;
+    margin: 30px auto;
+    position: relative;
+    padding: 0;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1), inset 0 0 0 2px #fff, inset 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+body.on .clock {
+    border: 10px solid black;
+}
+
+.myClockDiz {
+    background: #FFFFFF4A url(clockdark.png);
+    background-size: cover;
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+    /* account for the height of the clock hands */
+}
+
+body.on .myClockDiz {
+    background: #FFFFFF4A url(clock.png);
+    background-size: cover;
+}
+
+.myClock {
+    width: 70%;
+    height: 6px;
+    background: linear-gradient(to right, #000 50%, transparent 50%);
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    border-radius: 5px
+}
+
+.hoursClock {
+    width: 60%;
+    left: 20%;
+}
+
+.secondsClock {
+    height: 3px;
+    background: linear-gradient(to right, #ED0600 50%, transparent 50%);
+}
+
+.outter {
+    width: 100%
+}
+
+.onoff {
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    font-size: 16px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #dfdfdf));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dfdfdf', GradientType=0);
+    background: linear-gradient(top, #ffffff 0%, #dfdfdf 100%);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 3px 4px -1px #464646;
+    -webkit-box-shadow: 0 3px 4px -1px #464646;
+    box-shadow: 0 3px 4px -1px #464646;
+    padding: 6px 12px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+}
+
+body.on .onoff {
+    -moz-box-shadow: 2px 3px 2px -1px #464646 inset, 0 1px 1px 0 #666666;
+    -webkit-box-shadow: 2px 3px 2px -1px #464646 inset, 0 1px 1px 0 #666666;
+    box-shadow: 2px 3px 2px -1px #464646 inset, 0 1px 1px 0 #666666;
+}
