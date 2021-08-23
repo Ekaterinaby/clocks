@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="onoff">Включить свет</div>
+    <div class="onoff">Включить подсветку</div>
     <div class="outter">
         <div class="clock">
             <div class="myClockDiz">
@@ -66,10 +66,10 @@
             let body = document.querySelector('body')
             if (body.classList.contains('on')) {
                 body.classList.remove('on')
-                onoff.target.innerHTML = 'Включить свет'
+                onoff.target.innerHTML = 'Включить подсветку'
             } else {
                 body.classList.add('on')
-                onoff.target.innerHTML = 'Выключить свет'
+                onoff.target.innerHTML = 'Выключить подсветку'
             }
         })
     </script>
