@@ -15,7 +15,7 @@ body {
     background-size: cover;
 }*/
 
-body.on {backdrop-filter: brightness(150%);}
+ 
 .timetable {
     position: relative;
     width: 100%;
