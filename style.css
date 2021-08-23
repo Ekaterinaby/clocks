@@ -3,7 +3,7 @@ body {
     padding: 0;
     min-height: 100vh;
     background: url(wall.jpg) no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     font-family: Arial;
     text-align: center;
     font-size: 24px;
